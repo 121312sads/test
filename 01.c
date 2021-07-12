@@ -64,7 +64,7 @@ int main()
     printf("output\n");
     if((a&a-1)==0)/*若为2的次方a&a-1应等于0*/
     {
-        n=num(a);/*^����*/
+        n=num(a);/*^个数*/
         printf("%d\n",n);
         dividenum(n);
     }
