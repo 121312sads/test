@@ -1,7 +1,7 @@
 #include<stdio.h>
 int num(int p)
 {
-    int q=0;/*����Ϊ2��q�η�*/
+    int q=0;/*此数为2的q次方*/
     while(p!=1)
     {
        p=p/2;
@@ -12,12 +12,12 @@ int num(int p)
 int add(int a)
 {
     int num1=0;
-    while((a&a-1)!=0)/*��Ϊ2�Ĵη�a&a-1Ӧ����0*/
+    while((a&a-1)!=0)/*若为2的次方a&a-1应等于0*/
     {
         a=a+1;
         num1=num1+1;
     }
-    return num1;/*+����*/
+    return num1/*+个数*/
 }
 int reduce(int a)
 {
@@ -27,7 +27,7 @@ int reduce(int a)
         a=a-1;
         num2=num2+1;
     }
-    return num2;/*-����*/
+    return num2;/*-个数*/
 }
 void dividenum(int n)
 {
@@ -62,7 +62,7 @@ int main()
     printf("input\n");
     scanf("%d",&a);
     printf("output\n");
-    if((a&a-1)==0)/*��Ϊ2�Ĵη�a&a-1Ӧ����0*/
+    if((a&a-1)==0)/*若为2的次方a&a-1应等于0*/
     {
         n=num(a);/*^����*/
         printf("%d\n",n);
@@ -72,7 +72,7 @@ int main()
     {
         if(add(a)<reduce(a))
         {
-            n=num(a+add(a));/*^����*/
+            n=num(a+add(a));/*^个数*/
             printf("%d\n",n+add(a));
             addnum(n,a);
             dividenum(n);
