@@ -11,7 +11,7 @@ int main(int argc,char *argv[])
     char c;
     int r;
     FILE*fp=fopen(argv[1],"rb");
-    if(fp=NULL)
+    if(fp==NULL)
     return -1;
     fread(&num,1,4,fp)/*读出文件个数*/
     struct pack *info=(struct pack*)malloc(num*sizeof(struct pack));
