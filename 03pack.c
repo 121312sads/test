@@ -9,7 +9,7 @@ int getsize(char* name)/*获取文件大小*/
 {
     FILE* fp;
     int size;
-    if((fp=fopen(name,"r"))=NULL)
+    if((fp=fopen(name,"r"))==NULL)
     return -1;
     fseek(fp,0,SEEK_END);/*指针移动到文件最后*/
     size=ftell(fp);/*判断文件大小*/

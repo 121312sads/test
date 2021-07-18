@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 struct pack{
     char name[200];
     int size;
@@ -23,7 +24,7 @@ int main(int argc,char *argv[])
         {
             fread(&c,1,1,fp);
             fwrite(&c,1,1,fd);
-        }
+        }/*读出文件内容*/
         fclose(fd);
     }
     fclose(fp);
