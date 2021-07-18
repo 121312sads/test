@@ -47,7 +47,7 @@ int main(int argc,char *argv[])
     fputs(argv[i+1],fd);/*将文件名读入工具文件中*/
     ch=fgetc(fd);
     printf(".");
-    if(ch=".")/*是否为空扩展名*/
+    if(ch==".")/*是否为空扩展名*/
     {
         printf("\ninfo[i].name");/*文件名*/
         putsize(info[i].name);/*文件大小*/
